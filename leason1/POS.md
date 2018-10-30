@@ -1,11 +1,4 @@
-# POS Project v1
-
-POS收银机 版本：v1
-
-## 教学目标
-
-1. 熟悉JavaScript的基本语法；
-2. 熟悉JavaScript的基本逻辑语句及关键字；
+# POS Project
 
 ## 需求描述
 
@@ -17,7 +10,7 @@ POS收银机 版本：v1
 
 输入格式（样例）：
 
-```javascript
+```swift
 [
   'ITEM000001',
   'ITEM000001',
@@ -48,12 +41,62 @@ POS收银机 版本：v1
 **********************
 ```
 
-## 作业要求
+## 数据
+```javascript
+function loadAllItems() {
+  return [
+    {
+      barcode: 'ITEM000000',
+      name: '可口可乐',
+      unit: '瓶',
+      price: 3.00
+    },
+    {
+      barcode: 'ITEM000001',
+      name: '雪碧',
+      unit: '瓶',
+      price: 3.00
+    },
+    {
+      barcode: 'ITEM000002',
+      name: '苹果',
+      unit: '斤',
+      price: 5.50
+    },
+    {
+      barcode: 'ITEM000003',
+      name: '荔枝',
+      unit: '斤',
+      price: 15.00
+    },
+    {
+      barcode: 'ITEM000004',
+      name: '电池',
+      unit: '个',
+      price: 2.00
+    },
+    {
+      barcode: 'ITEM000005',
+      name: '方便面',
+      unit: '袋',
+      price: 4.50
+    }
+  ];
+}
 
-1. 根据```test/main-test.js```中的测试用例，在```main/main.js```文件中编写实现代码并确保测试通过；
-2. 请在保证代码可读性的前提下，尽可能用最少的代码行数完成作业；
-3. 请将完成后的作业提交到自己的GitHub仓库下；
-4. 请保持良好的代码提交（Commit）习惯。
+function loadPromotions() {
+  return [
+    {
+      type: 'BUY_TWO_GET_ONE_FREE',
+      barcodes: [
+        'ITEM000000',
+        'ITEM000001',
+        'ITEM000005'
+      ]
+    }
+  ];
+}
+```
 
 ## 作业提示
 
@@ -94,4 +137,5 @@ POS收银机 版本：v1
       }
    ]
    ```
+
 
