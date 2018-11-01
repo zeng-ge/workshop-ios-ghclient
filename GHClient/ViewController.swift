@@ -10,10 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-  }
-
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var dayLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        timeLabel.text = "12:00"
+        dayLabel.text = "Tuesday, October, 31th"
+        // Do any additional setup after loading the view, typically from a nib.
+      }
 
 }
 
