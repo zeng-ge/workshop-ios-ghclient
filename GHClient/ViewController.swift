@@ -15,8 +15,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timeLabel.text = "12:00"
-        dayLabel.text = "Tuesday, October, 31th"
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+            let date = Date()
+            let dateformat = DateFormatter()
+            let timeformat = DateFormatter()
+            dateformat.dateFormat = "EEEE, MMMM dd"
+            timeformat.dateFormat = "HH:mm:ss"
+            let dateString = dateformat.string(from: date)
+            let timeString = timeformat.string(from: date)
+            self.timeLabel.text = timeString
+            self.dayLabel.text = dateString + "th"
+        }
         // Do any additional setup after loading the view, typically from a nib.
       }
 
