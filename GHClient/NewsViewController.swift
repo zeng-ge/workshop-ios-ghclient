@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NewsViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
   
   private let events: [Event] = FakeDataProvider().providerData()
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
   }
 }
 
-extension ViewController: UITableViewDataSource {
+extension NewsViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return events.count
   }
@@ -37,7 +37,7 @@ extension ViewController: UITableViewDataSource {
   }
 }
 
-extension ViewController: UITableViewDelegate {
+extension NewsViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 75
   }

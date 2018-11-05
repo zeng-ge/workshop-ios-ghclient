@@ -30,9 +30,9 @@ class RequestHeaderBuilder {
   func build() -> [String: String] {
     var headers = [String: String]()
     guard let username = username, !username.isEmpty,
-      let password = password, !password.isEmpty,
-      let encodedAuthentication = base64Encode(emailOrUsername: username, password: password) else {
-        return headers
+          let password = password, !password.isEmpty,
+          let encodedAuthentication = base64Encode(emailOrUsername: username, password: password) else {
+      return headers
     }
     headers["Authorization"] = "Basic \(encodedAuthentication)"
     return headers
