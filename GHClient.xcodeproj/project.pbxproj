@@ -29,7 +29,6 @@
 		7C548762218588F800D46A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C548764218588F800D46A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C84AB6D218A00920045F068 /* FakeDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDataProvider.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		7CF3D30A21912BF30085D690 /* RequestHeaderBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHeaderBuilder.swift; sourceTree = "<group>"; };
 		7CF3D30D21912C240085D690 /* KeychainAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAccessor.swift; sourceTree = "<group>"; };
 		D3A3F269218ABEB90011ED51 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
