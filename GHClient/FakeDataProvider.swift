@@ -59,7 +59,7 @@ class FakeDataProvider {
 
 extension Data {
   func jsonDataMapModel<T: Decodable>(_ type: T.Type) -> T? {
-    let decoder = JSONDecoder()
+    let decoder = JSONDecoder()    
     do {
       return try decoder.decode(T.self, from: self)
     } catch {
